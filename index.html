@@ -4,25 +4,40 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>OSCAR ESCOBAR MARIN — CV Web</title>
+  <meta name="description" content="Currículum web de Oscar Escobar Marin — desarrollador web junior en formación. HTML, CSS, JavaScript y proyectos en GitHub.">
+  <link rel="icon" href="assets/avatar.svg" type="image/svg+xml">
+  <meta property="og:title" content="OSCAR ESCOBAR MARIN — CV Web">
+  <meta property="og:description" content="Currículum web de Oscar Escobar Marin — desarrollador web junior en formación.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zodyrs.github.io/cv-portfolio-web/">
+  <meta property="og:image" content="assets/avatar.svg">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="page">
     <header class="hero">
-      <img class="avatar" src="assets/avatar.svg" alt="Silhouette de OSCAR ESCOBAR MARIN">
+      <img class="avatar" src="assets/avatar.svg" alt="Avatar de OSCAR ESCOBAR MARIN">
       <div class="hero-text">
-        <h1>OSCAR ESCOBAR MARIN</h1>
+        <h1 class="name-gradient">OSCAR ESCOBAR MARIN</h1>
         <p class="role">Técnico en Programación en Formación — Desarrollador Web Junior</p>
         <p class="contact-inline">
-          <a href="https://github.com/zodyrs" target="_blank" rel="noopener">GitHub: @zodyrs</a>
+          <a href="https://github.com/zodyrs" target="_blank" rel="noopener noreferrer">GitHub: @zodyrs</a>
           <span class="sep">·</span>
           <a href="mailto:eredazefarm8@gmail.com">eredazefarm8@gmail.com</a>
           <span class="sep">·</span>
-          <span>Tel: 351 296 7211</span>
+          <a href="tel:+543512967211">Tel: 351 296 7211</a>
         </p>
       </div>
     </header>
+
+    <nav aria-label="Navegación principal" class="main-nav">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#educacion">Educación</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
 
     <main class="container">
       <section class="card" id="sobre-mi">
@@ -53,16 +68,16 @@
         <article class="project">
           <h3>Proyectos escolares</h3>
           <p>Incluye proyectos del curso (por ejemplo: Web Escolar TP4). Repositorios y detalles en mi GitHub.</p>
-          <p><a href="https://github.com/zodyrs" target="_blank" rel="noopener">Ver repositorios en GitHub</a></p>
+          <p><a href="https://github.com/zodyrs" target="_blank" rel="noopener noreferrer">Ver repositorios en GitHub</a></p>
         </article>
       </section>
 
       <section class="card" id="contacto">
         <h2>Contacto</h2>
-        <p>GitHub: <a href="https://github.com/zodyrs" target="_blank" rel="noopener">https://github.com/zodyrs</a></p>
+        <p>GitHub: <a href="https://github.com/zodyrs" target="_blank" rel="noopener noreferrer">https://github.com/zodyrs</a></p>
         <p>Email: <a href="mailto:eredazefarm8@gmail.com">eredazefarm8@gmail.com</a></p>
-        <p>Teléfono: 351 296 7211</p>
-        <p>Currículum en PDF: <a href="/cv-portfolio-web/assets/OSCAR_ESCOBAR_MARIN_FlowCV_Resume_2026-07-31.pdf" target="_blank" rel="noopener" download>Descargar PDF</a></p>
+        <p>Teléfono: <a href="tel:+543512967211">351 296 7211</a></p>
+        <p>Currículum en PDF: <a class="btn-download" href="assets/OSCAR_ESCOBAR_MARIN_FlowCV_Resume_2026-07-31.pdf" target="_blank" rel="noopener noreferrer" download>Descargar PDF</a></p>
       </section>
     </main>
 
