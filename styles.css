@@ -129,8 +129,15 @@ a:hover{text-decoration:underline}
 
 /* accent badges for sections */
 .section-badge{
-  display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;font-weight:700;font-size:13px;margin-bottom:8px;box-shadow:0 8px 20px rgba(124,58,237,0.12)
+  display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;font-weight:700;font-size:13px;ma...
 }
 
 /* subtle hover for cards */
 .card:hover{transform:translateY(-4px);transition:transform .25s ease}
+
+/* Ensure paragraphs wrap and are not truncated with ellipsis */
+.card p {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+}
