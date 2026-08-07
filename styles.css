@@ -28,6 +28,27 @@ body{
   font-size:16px;
 }
 
+/* Skip link */
+.skip-link{
+  position:absolute;
+  left:-999px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+.skip-link:focus{
+  left:16px;
+  top:16px;
+  width:auto;
+  height:auto;
+  padding:8px 12px;
+  background:#071633;
+  color:#fff;
+  border-radius:6px;
+  z-index:1000;
+}
+
 .page{max-width:var(--max-width);margin:0 auto}
 
 /* Header / hero */
@@ -80,6 +101,9 @@ body{
   padding:18px;
   box-shadow:0 8px 24px rgba(7,22,51,0.06);
   border:1px solid rgba(7,22,51,0.03);
+
+  /* smooth transitions for hover/interactive state */
+  transition: transform .25s ease;
 }
 
 .card h2{margin:0 0 10px 0;font-size:18px;color:var(--accent)}
@@ -110,6 +134,9 @@ body{
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 
+/* focus visible for keyboard users */
+a:focus-visible, button:focus-visible { outline: 3px solid rgba(124,58,237,0.35); outline-offset: 2px; border-radius:6px; }
+
 /* footer */
 .footer{margin-top:24px;color:var(--muted);font-size:13px;text-align:center}
 
@@ -123,14 +150,20 @@ a:hover{text-decoration:underline}
 
 @media (max-width:640px){
   body{padding:16px}
-  .hero{flex-direction:row;padding:14px}
+  /* stack hero vertically on small screens for better readability */
+  .hero{flex-direction:column; align-items:center; text-align:center; padding:14px}
   .avatar{width:84px;height:84px}
 }
 
 /* accent badges for sections */
 .section-badge{
-  display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;font-weight:700;font-size:13px;margin-bottom:8px;box-shadow:0 8px 20px rgba(124,58,237,0.12)
+  display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;font-weight:700;font-size:13px;
 }
 
 /* subtle hover for cards */
-.card:hover{transform:translateY(-4px);transition:transform .25s ease}
+.card:hover{transform:translateY(-4px);}
+
+/* respect reduced motion preference */
+@media (prefers-reduced-motion: reduce){
+  .card, .card:hover { transition: none; transform: none; }
+}

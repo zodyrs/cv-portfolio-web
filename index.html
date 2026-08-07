@@ -3,31 +3,41 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Currículum web de Oscar Escobar Marín — Técnico en Programación en formación. Proyectos, habilidades y contacto.">
+  <meta name="theme-color" content="#fffbf2">
   <title>OSCAR ESCOBAR MARIN — CV Web</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font optimizations -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
   <div class="page">
     <header class="hero">
-      <img class="avatar" src="assets/avatar.svg" alt="Silhouette de OSCAR ESCOBAR MARIN">
+      <img class="avatar" src="assets/avatar.svg" alt="Avatar de Oscar Escobar Marín" width="110" height="110">
       <div class="hero-text">
-        <h1>OSCAR ESCOBAR MARIN</h1>
+        <h1>Oscar Escobar Marín</h1>
         <p class="role">Técnico en Programación en Formación — Desarrollador Web Junior</p>
         <p class="contact-inline">
-          <a href="https://github.com/zodyrs" target="_blank" rel="noopener">GitHub: @zodyrs</a>
+          <a href="https://github.com/zodyrs" target="_blank" rel="noopener noreferrer">GitHub: @zodyrs</a>
           <span class="sep">·</span>
           <a href="mailto:eredazefarm8@gmail.com">eredazefarm8@gmail.com</a>
           <span class="sep">·</span>
-          <span>Tel: 351 296 7211</span>
+          <a href="tel:+543512967211">351 296 7211</a>
         </p>
       </div>
     </header>
 
-    <main class="container">
+    <main id="main-content" class="container" role="main">
       <section class="card" id="sobre-mi">
         <h2>Sobre mí</h2>
-        <p>Soy OSCAR ESCOBAR MARIN, estudiante de IPET 247 en la asignatura Formación en Ambiente de Trabajo (FAT). Me interesa el desarrollo web, JavaScript y la construcción de interfaces acce[...]
+        <p>Soy Oscar Escobar Marín, estudiante de IPET 247 en la asignatura Formación en Ambiente de Trabajo (FAT). Me interesa el desarrollo web, JavaScript y la construcción de interfaces accesibles. Busco oportunidades para aprender y colaborar en proyectos reales.</p>
       </section>
 
       <section class="card" id="educacion">
@@ -53,20 +63,22 @@
         <article class="project">
           <h3>Proyectos escolares</h3>
           <p>Incluye proyectos del curso (por ejemplo: Web Escolar TP4). Repositorios y detalles en mi GitHub.</p>
-          <p><a href="https://github.com/zodyrs" target="_blank" rel="noopener">Ver repositorios en GitHub</a></p>
+          <p><a href="https://github.com/zodyrs" target="_blank" rel="noopener noreferrer">Ver repositorios en GitHub</a></p>
         </article>
       </section>
 
       <section class="card" id="contacto">
         <h2>Contacto</h2>
-        <p>GitHub: <a href="https://github.com/zodyrs" target="_blank" rel="noopener">https://github.com/zodyrs</a></p>
-        <p>Email: <a href="mailto:eredazefarm8@gmail.com">eredazefarm8@gmail.com</a></p>
-        <p>Teléfono: 351 296 7211</p>
-        <p>Currículum en PDF: <a href="assets/OSCAR_ESCOBAR_MARIN_FlowCV_Resume_2026-07-31.pdf" target="_blank" rel="noopener">Descargar PDF</a></p>
+        <address>
+          GitHub: <a href="https://github.com/zodyrs" target="_blank" rel="noopener noreferrer">zodyrs</a><br>
+          Email: <a href="mailto:eredazefarm8@gmail.com">eredazefarm8@gmail.com</a><br>
+          Teléfono: <a href="tel:+543512967211">351 296 7211</a><br>
+          Currículum en PDF: <a href="assets/OSCAR_ESCOBAR_MARIN_FlowCV_Resume_2026-07-31.pdf" target="_blank" rel="noopener noreferrer">Descargar PDF</a>
+        </address>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <small>Currículum Vitae web creado para la asignatura FAT — IPET 247 (2026).</small>
     </footer>
   </div>
